@@ -5,7 +5,8 @@
 
   #chat
     Witaj...
-
-  = form_for @message, :remote => true do |form|
-    = form.text_field :content
-    = form.submit 'Wyślij'
+    .content
+    .controls
+      = form_for @message, :remote => true do |form|
+        = form.text_field :content, :size => 10
+        = form.submit 'Wyślij'

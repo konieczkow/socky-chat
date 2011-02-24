@@ -7,6 +7,7 @@
 
 $background: #2f4f4f;
 $message_background: #002020;
+$white: #ffffff;
 
 body {
     background: $background;
@@ -16,13 +17,24 @@ body {
 div.title {
     background: $message_background;
     padding: 10px;
-}
 
-div.title h1 {
-    color: #ffffff;
+    h1 {
+        color: $white;
+    }
 }
 
 #content_wrapper {
     width: 500px;
     margin: 0 auto;
+}
+
+#chat {
+    border: 3px solid #708090;
+    padding: 20px;
+    background: $white;
+
+    .content {
+        border-top: 1px dashed $message_background;
+        margin: 10px 0;
+    }
 }
