@@ -1,0 +1,11 @@
+#content_wrapper
+  .title
+    %h1
+      Chat
+
+  #chat
+    Witaj...
+
+  = form_for @message, :remote => true do |form|
+    = form.text_field :content
+    = form.submit 'Wyślij'

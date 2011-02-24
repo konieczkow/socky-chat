@@ -1,0 +1,28 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$background: #2f4f4f;
+$message_background: #002020;
+
+body {
+    background: $background;
+    font-family: Inconsolata;
+}
+
+div.title {
+    background: $message_background;
+    padding: 10px;
+}
+
+div.title h1 {
+    color: #ffffff;
+}
+
+#content_wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
