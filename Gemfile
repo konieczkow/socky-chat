@@ -6,6 +6,7 @@ gem 'sqlite3'
 
 gem 'compass'
 gem "socky-client-rails"
+gem "socky-server"
 gem "jquery-rails"
 
 gem "haml"

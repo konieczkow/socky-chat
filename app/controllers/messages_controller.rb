@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
   respond_to :js
 
   def new
+    @messages = Message.all(:limit => 10, :order => 'created_at ASC')
     @message = Message.new
   end
 

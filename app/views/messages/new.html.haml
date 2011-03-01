@@ -6,6 +6,7 @@
   #chat
     Witaj...
     .content
+      = render :partial => 'message', :collection => @messages
     .controls
       = form_for @message, :remote => true do |form|
         = form.text_field :content, :size => 10
